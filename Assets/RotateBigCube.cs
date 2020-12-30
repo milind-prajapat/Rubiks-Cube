@@ -20,6 +20,7 @@ public class RotateBigCube : MonoBehaviour
     private string selectedFunction;
 
     private int layerMask = 1 << 8;
+    private bool Auto = false;
     CubeState cubeState;
     ReadCube readCube;
     Automate automate;
@@ -35,7 +36,7 @@ public class RotateBigCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (automate.moveList.Count == 0 && !cubeState.autoRotating && !cubeState.dragging && cubeState.started && !cubeState.QuitButton.GetComponent<ButtonCheck>().buttonHighlighted && !cubeState.ShuffleButton.GetComponent<ButtonCheck>().buttonHighlighted && !cubeState.SolveButton.GetComponent<ButtonCheck>().buttonHighlighted && !cubeState.StateButton.GetComponent<ButtonCheck>().buttonHighlighted && cubeState.ShuffleButton.interactable)
+        if ((automate.moveList.Count == 0 && !cubeState.autoRotating && !cubeState.dragging && cubeState.started && !cubeState.QuitButton.GetComponent<ButtonCheck>().buttonHighlighted && !cubeState.ShuffleButton.GetComponent<ButtonCheck>().buttonHighlighted && !cubeState.SolveButton.GetComponent<ButtonCheck>().buttonHighlighted && !cubeState.StateButton.GetComponent<ButtonCheck>().buttonHighlighted && cubeState.ShuffleButton.interactable) || (Auto && !cubeState.dragging && cubeState.started))
         {
             if (dragging && !autoRotating)
             {
@@ -105,6 +106,8 @@ public class RotateBigCube : MonoBehaviour
             transform.localRotation = targetQuaternion;
             autoRotating = false;
             selectFunc = false;
+            Auto = false;
+            cubeState.autoRotating = false;
             readCube.ReadState();
         }
     }
@@ -202,4 +205,23 @@ public class RotateBigCube : MonoBehaviour
         mouseRef = Input.mousePosition;
     }
 
+    public void StartAutoRotate(string side, float angle)
+    {
+        Vector3 localForward = Vector3.zero;
+        if (side == "Horizontal")
+        {
+            localForward = new Vector3(0.0f, 2.0f, 0.0f);
+        }
+        else if (side == "LeftVertical")
+        {
+            localForward = new Vector3(0.0f, 0.0f, -2.0f);
+        }
+        else if (side == "RightVertical")
+        {
+            localForward = new Vector3(-2.0f, 0.0f, 0.0f);
+        }
+        targetQuaternion = Quaternion.AngleAxis(angle, localForward) * transform.localRotation;
+        autoRotating = true;
+        Auto = true;
+    }
 }

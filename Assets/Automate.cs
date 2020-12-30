@@ -168,6 +168,42 @@ public class Automate : MonoBehaviour
         {
             RotateSide(cubeState.CentreHorizontal, -180, true);
         }
+        if (move == "X")
+        {
+            rotateBigCube.StartAutoRotate("LeftVertical", -90);
+        }
+        if (move == "x" || move == "X'")
+        {
+            rotateBigCube.StartAutoRotate("LeftVertical", 90);
+        }
+        if (move == "X2")
+        {
+            rotateBigCube.StartAutoRotate("LeftVertical", -180);
+        }
+        if (move == "Y")
+        {
+            rotateBigCube.StartAutoRotate("Horizontal", -90);
+        }
+        if (move == "y" || move == "Y'")
+        {
+            rotateBigCube.StartAutoRotate("Horizontal", 90);
+        }
+        if (move == "Y2")
+        {
+            rotateBigCube.StartAutoRotate("Horizontal", -180);
+        }
+        if (move == "Z")
+        {
+            rotateBigCube.StartAutoRotate("RightVertical", -90);
+        }
+        if (move == "z" || move == "Z'")
+        {
+            rotateBigCube.StartAutoRotate("RightVertical", 90);
+        }
+        if (move == "Z2")
+        {
+            rotateBigCube.StartAutoRotate("RightVertical", -180);
+        }
     }
 
     void RotateSide(List<GameObject> side, float angle, bool check = false)

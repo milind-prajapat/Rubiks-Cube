@@ -96,6 +96,27 @@ public class KeyBoard : MonoBehaviour
                 else
                     automate.moveList.Add("e");
             }
+            else if (Input.GetKeyDown(KeyCode.X))
+            {
+                if ((isCapsLockOn || (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))) && !(isCapsLockOn && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))))
+                    automate.moveList.Add("X");
+                else
+                    automate.moveList.Add("x");
+            }
+            else if (Input.GetKeyDown(KeyCode.Y))
+            {
+                if ((isCapsLockOn || (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))) && !(isCapsLockOn && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))))
+                    automate.moveList.Add("Y");
+                else
+                    automate.moveList.Add("y");
+            }
+            else if (Input.GetKeyDown(KeyCode.Z))
+            {
+                if ((isCapsLockOn || (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))) && !(isCapsLockOn && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))))
+                    automate.moveList.Add("Z");
+                else
+                    automate.moveList.Add("z");
+            }
         }
     }
 }
