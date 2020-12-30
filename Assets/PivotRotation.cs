@@ -12,7 +12,7 @@ public class PivotRotation : MonoBehaviour
     private Vector3 rotation;
 
     private bool autoRotating = false;
-    private float speed = 500f;
+    private float speed = 400f;
     private Quaternion targetQuaternion;
 
     private ReadCube readCube;
@@ -122,11 +122,12 @@ public class PivotRotation : MonoBehaviour
         if(Quaternion.Angle(transform.localRotation, targetQuaternion) <= 1)
         {
             transform.localRotation = targetQuaternion;
+            cubeState.PutDown(activeSide, transform.parent);
+            readCube.ReadState();
+
             autoRotating = false;
             cubeState.autoRotating = false;
             cubeState.wasMouse = false;
-            cubeState.PutDown(activeSide, transform.parent);
-            readCube.ReadState();
         }
     }
 }

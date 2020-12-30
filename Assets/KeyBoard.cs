@@ -8,6 +8,7 @@ public class KeyBoard : MonoBehaviour
     Automate automate;
     CubeState cubeState;
     RotateBigCube rotateBigCube;
+    SolveTwoPhase solveTwoPhase;
 
     [System.Runtime.InteropServices.DllImport("USER32.dll")] public static extern short GetKeyState(int nVirtKey);
     private bool IsCapsLockOn => (GetKeyState(0x14) & 1) > 0;
@@ -24,6 +25,7 @@ public class KeyBoard : MonoBehaviour
         automate = FindObjectOfType<Automate>();
         cubeState = FindObjectOfType<CubeState>();
         rotateBigCube = FindObjectOfType<RotateBigCube>();
+        solveTwoPhase = FindObjectOfType<SolveTwoPhase>();
     }
 
     // Update is called once per frame
@@ -116,6 +118,18 @@ public class KeyBoard : MonoBehaviour
                     automate.moveList.Add("Z");
                 else
                     automate.moveList.Add("z");
+            }
+            else if (Input.GetKeyDown(KeyCode.C))
+            {
+                cubeState.WriteOriginalStateString();
+            }
+            else if (Input.GetKeyDown(KeyCode.P))
+            {
+                automate.Shuffle();
+            }
+            else if (Input.GetKeyDown(KeyCode.Q))
+            {
+                solveTwoPhase.Solver();
             }
         }
     }

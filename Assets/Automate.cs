@@ -46,7 +46,7 @@ public class Automate : MonoBehaviour
         cubeState.StateButton.interactable = false;
 
         List<string> moves = new List<string>();
-        int shuffleLength = Random.Range(20, 30);
+        int shuffleLength = Random.Range(20, 25);
 
         for(int i=0; i<shuffleLength; i++)
         {
@@ -210,9 +210,14 @@ public class Automate : MonoBehaviour
     {
         PivotRotation pr;
         if (check)
+        {
             pr = cubeState.Centre.GetComponent<PivotRotation>();
+            pr.StartAutoRotate(side, angle);
+        }
         else
+        {
             pr = side[4].transform.parent.GetComponent<PivotRotation>();
-        pr.StartAutoRotate(side, angle);
+            pr.StartAutoRotate(side, angle);
+        } 
     }
 }

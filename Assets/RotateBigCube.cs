@@ -104,11 +104,12 @@ public class RotateBigCube : MonoBehaviour
         if (Quaternion.Angle(transform.localRotation, targetQuaternion) <= 1)
         {
             transform.localRotation = targetQuaternion;
+            readCube.ReadState();
+
             autoRotating = false;
             selectFunc = false;
             Auto = false;
             cubeState.autoRotating = false;
-            readCube.ReadState();
         }
     }
 

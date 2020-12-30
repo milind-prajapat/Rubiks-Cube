@@ -38,11 +38,11 @@ public class SolveTwoPhase : MonoBehaviour
 
         string moveString = cubeState.GetStateString();
         string info = "";
-
+        
         //string solution = SearchRunTime.solution(moveString, out info, buildTables: true);
 
         string solution = Search.solution(moveString, out info);
-
+ 
         List<string> solutionList = StringToList(solution);
 
         automate.moveList = solutionList;

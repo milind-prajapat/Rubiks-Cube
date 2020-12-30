@@ -1,0 +1,19 @@
+Current State
+
+Up Face
+FFFFFFFFF
+
+Right Face
+UUUUUUUUU
+
+Front Face
+RRRRRRRRR
+
+Down Face
+BBBBBBBBB
+
+Left Face
+DDDDDDDDD
+
+Back Face
+LLLLLLLLL

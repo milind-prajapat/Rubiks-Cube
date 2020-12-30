@@ -140,7 +140,7 @@ public class ReadCube : MonoBehaviour
             Vector3 ray = rayStart.transform.position;
             RaycastHit hit;
 
-            if (Physics.Raycast(ray,rayTransform.forward, out hit, Mathf.Infinity, layerMask))
+            if (Physics.Raycast(ray, rayTransform.forward, out hit, Mathf.Infinity, layerMask))
             {
                 Debug.DrawRay(ray, rayTransform.forward * hit.distance, Color.yellow);
                 facesHit.Add(hit.collider.gameObject);
@@ -149,7 +149,7 @@ public class ReadCube : MonoBehaviour
             {
                 Debug.DrawRay(ray, rayTransform.forward * 1000, Color.green);
             }
-        }
+       }
        return facesHit;
     }
 }
