@@ -2,7 +2,7 @@
 A Rubicks Cube Simulator Made Through Unity
 
 This project is exclusively made for people who are putting their efforts in Rubik’s cube solving algorithm, for testing and debugging process of their code. The simulator provides a platform to directly access the current state of the cube over press of a button. Meanwhile it can also be used for general purposes, having good time, solving the cube on your own.<br />
-Simulator is already equipped with a cube solving algorithm, that uses CFOP method of solving cube. It's an external package named Kociemba, link to it can be found under references.
+Simulator is already equipped with a cube solving algorithm, named The Two Phase algorithm by [Herbert Kociemba](https://www.speedsolving.com/wiki/index.php/Herbert_Kociemba). It's an external package named Kociemba, link to it can be found under references.
 
 
 ### Instructions to use
