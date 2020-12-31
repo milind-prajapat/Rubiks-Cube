@@ -12,6 +12,8 @@ public class Automate : MonoBehaviour
         "U2","D2","L2","R2","F2","B2","M2","S2","E2"
     };
 
+    public bool wasButton = false;
+
     CubeState cubeState;
     ReadCube readCube;
     RotateBigCube rotateBigCube;
@@ -31,16 +33,18 @@ public class Automate : MonoBehaviour
             DoMove(moveList[0]);
             moveList.Remove(moveList[0]);
         }
-        else if(moveList.Count == 0)
+        else if(moveList.Count == 0 && wasButton)
         {
             cubeState.ShuffleButton.interactable = true;
             cubeState.SolveButton.interactable = true;
             cubeState.StateButton.interactable = true;
+            wasButton = false;
         }
     }
 
     public void Shuffle()
     {
+        wasButton = true;
         cubeState.ShuffleButton.interactable = false;
         cubeState.SolveButton.interactable = false;
         cubeState.StateButton.interactable = false;

@@ -36,7 +36,7 @@ public class RotateBigCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((automate.moveList.Count == 0 && !cubeState.autoRotating && !cubeState.dragging && cubeState.started && !cubeState.QuitButton.GetComponent<ButtonCheck>().buttonHighlighted && !cubeState.ShuffleButton.GetComponent<ButtonCheck>().buttonHighlighted && !cubeState.SolveButton.GetComponent<ButtonCheck>().buttonHighlighted && !cubeState.StateButton.GetComponent<ButtonCheck>().buttonHighlighted && cubeState.ShuffleButton.interactable) || (Auto && !cubeState.dragging && cubeState.started))
+        if ((automate.moveList.Count == 0 && !cubeState.autoRotating && !cubeState.dragging && cubeState.started && !cubeState.QuitButton.GetComponent<ButtonCheck>().buttonHighlighted && !cubeState.ShuffleButton.GetComponent<ButtonCheck>().buttonHighlighted && !cubeState.SolveButton.GetComponent<ButtonCheck>().buttonHighlighted && !cubeState.StateButton.GetComponent<ButtonCheck>().buttonHighlighted) || (Auto && !cubeState.dragging && cubeState.started))
         {
             if (dragging && !autoRotating)
             {
@@ -66,6 +66,11 @@ public class RotateBigCube : MonoBehaviour
                 if (Input.GetMouseButtonUp(0))
                 {
                     dragging = false;
+
+                    cubeState.ShuffleButton.interactable = true;
+                    cubeState.SolveButton.interactable = true;
+                    cubeState.StateButton.interactable = true;
+
                     RotateToRightAngle();
                 }
             }
@@ -146,6 +151,10 @@ public class RotateBigCube : MonoBehaviour
                 start = Input.mousePosition;
                 mouseRef = Input.mousePosition;
                 selectFunc = true;
+
+                cubeState.ShuffleButton.interactable = false;
+                cubeState.SolveButton.interactable = false;
+                cubeState.StateButton.interactable = false;
             }
         }
     }

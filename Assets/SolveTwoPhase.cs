@@ -32,6 +32,7 @@ public class SolveTwoPhase : MonoBehaviour
 
     public void Solver()
     {
+        automate.wasButton = true;
         cubeState.ShuffleButton.interactable = false;
         cubeState.SolveButton.interactable = false;
         cubeState.StateButton.interactable = false;

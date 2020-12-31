@@ -34,6 +34,11 @@ public class PivotRotation : MonoBehaviour
             {
                 cubeState.dragging = false;
                 dragging = false;
+
+                cubeState.ShuffleButton.interactable = true;
+                cubeState.SolveButton.interactable = true;
+                cubeState.StateButton.interactable = true;
+
                 RotateToRightAngle();
             }
         }
@@ -70,6 +75,10 @@ public class PivotRotation : MonoBehaviour
         mouseRef = Input.mousePosition;
         dragging = true;
         cubeState.dragging = true;
+
+        cubeState.ShuffleButton.interactable = false;
+        cubeState.SolveButton.interactable = false;
+        cubeState.StateButton.interactable = false;
     }
 
     public void StartAutoRotate(List<GameObject> side, float angle)
