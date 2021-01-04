@@ -6,7 +6,7 @@ I exclusively did this project for people who put their efforts into Rubik's cub
 The simulator is already equipped with a cube solving algorithm, named The Two-Phase algorithm by [Herbert Kociemba](https://www.speedsolving.com/wiki/index.php/Herbert_Kociemba). It's an external package called Kociemba, link to it can be found under references.<br />
 
 
-### Instructions to use
+### Instructions To Use
 One can find the required files to run the simulator in the build folder of the repository. Android users can use the apk file to install the application, whereas windows users can go with the other folder.<br />
 
 The Fetch state button is exclusively meant for testing and debugging purposes and is only available for desktop users. The fetch state button saves cube's current state into a text file named "CurrentState.txt" which is available in the simulator's data folder.<br />
