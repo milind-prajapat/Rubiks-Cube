@@ -38,5 +38,5 @@ Uppercase turns 90° clockwise, and Lowercase turns 90° counter-clockwise<br />
 
 
 ### References
-[Kociemba](https://github.com/Megalomatt/Kociemba.git)<br />
-[Output Video](https://drive.google.com/file/d/1API5Szd4HY0s9dsJtHZZTSCmi3uhnHcj/view?usp=sharing)
+1. [Kociemba](https://github.com/Megalomatt/Kociemba.git)
+2. [Output Video](https://drive.google.com/file/d/1API5Szd4HY0s9dsJtHZZTSCmi3uhnHcj/view?usp=sharing)
