@@ -1,5 +1,5 @@
 # Rubik's-Cube
-A Rubik's Cube Simulator Made Through Unity
+A Rubik's Cube simulator made through unity
 
 I exclusively did this project for people who put their efforts into Rubik's cube solving algorithm to test and debug their code. The simulator provides a platform to directly access the cube's current state over a press of a button. Meanwhile, it can also be used for general purposes, having a good time and solving the cube independently.<br />
 
