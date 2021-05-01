@@ -13,7 +13,7 @@ The Fetch state button is exclusively meant for testing and debugging purposes a
 
 You can use the pointing devices as well as the keyboard keys to use the simulator.<br />
 
-## Key-Bindings
+### Key-Bindings
 **F** - Front Face<br />
 **L** - Left Face<br />
 **B** - Back Face<br />
