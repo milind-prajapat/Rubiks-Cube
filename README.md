@@ -14,26 +14,28 @@ The Fetch state button is exclusively meant for testing and debugging purposes a
 You can use the pointing devices as well as the keyboard keys to use the simulator.<br />
 
 ### Key-Bindings
-**F** - Front Face<br />
-**L** - Left Face<br />
-**B** - Back Face<br />
-**R** - Right Face<br />
-**U** - Up Face<br />
-**D** - Down Face<br />
+```
+F - Front Face
+L - Left Face
+B - Back Face
+R - Right Face
+U - Up Face
+D - Down Face
 
-**M** - Centre Right Vertical<br />
-**S** - Centre Left Vertical<br />
-**E** - Centre Horizontal<br />
+M - Centre Right Vertical
+S - Centre Left Vertical
+E - Centre Horizontal
 
-**X** - Rotates Cube on R<br />
-**Y** - Rotates Cube on U<br />
-**Z** - Rotates Cube on F<br />
+X - Rotates Cube on R
+Y - Rotates Cube on U
+Z - Rotates Cube on F
 
-**P** - Shuffle<br />
-**Q** - Solve<br />
-**C** - Get Current State<br />
+P - Shuffle
+Q - Solve
+C - Get Current State
 
-Uppercase turns 90° clockwise, and Lowercase turns 90° counter-clockwise<br />
+Uppercase turns 90° clockwise, and Lowercase turns 90° counter-clockwise
+```
 
 ## References
 1. [Windows Build](https://drive.google.com/file/d/1yPU8f04ILZ6PNuArOsjJkt3EMk4QQR_F/view?usp=sharing)
