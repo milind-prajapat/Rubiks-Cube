@@ -3,7 +3,7 @@ A Rubik's Cube Simulator Made Through Unity
 
 I exclusively did this project for people who put their efforts into Rubik's cube solving algorithm to test and debug their code. The simulator provides a platform to directly access the cube's current state over a press of a button. Meanwhile, it can also be used for general purposes, having a good time solving the cube independently.
 
-The simulator is equipped with a cube solving algorithm, named The Two-Phase Algorithm by [Herbert Kociemba](https://www.speedsolving.com/wiki/index.php/Herbert_Kociemba). It is an external package [Kociemba](https://github.com/Megalomatt/Kociemba).
+The simulator is equipped with a cube solving algorithm named The Two-Phase Algorithm by [Herbert Kociemba](https://www.speedsolving.com/wiki/index.php/Herbert_Kociemba). It is an external package [Kociemba](https://github.com/Megalomatt/Kociemba).
 
 The Fetch state button is exclusively meant for testing and debugging purposes and is only available for desktop users. The fetch state button saves the cube's current state into a text file named [CurrentState.txt](https://github.com/milind-prajapat/Rubiks-Cube/blob/main/Builds/Windows_x86_x64/Rubiks%20Cube_Data/CurrentState.txt), which is available in the simulator's [data](https://github.com/milind-prajapat/Rubiks-Cube/tree/main/Builds/Windows_x86_x64/Rubiks%20Cube_Data) directory.
 
@@ -17,7 +17,7 @@ You can use the pointing devices as well as the keyboard keys to use the simulat
 2. Integration with The **Two-Phase Algorithm** enables the cube to solve in the least number of steps
 3. The ability to write the **cube's current state** into a text file enables the testing and debugging of the cube solving algorithms
 4. **User-friendly UI**
-5. **Multiple platform support**, supports windows and android both
+5. **Multiple platform support**
 
 ## Key-Bindings
 ```
