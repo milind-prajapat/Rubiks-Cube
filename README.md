@@ -15,7 +15,7 @@ You can use the pointing devices as well as the keyboard keys to use the simulat
 ## Features
 1. Cube automation enables the shuffling of the cube
 2. Integration with The Two-Phase Algorithm enables the cube to solve in the lowest number of steps
-3. Ability to write the current state of the cube to a text file enables testing and debugging of the Rubik's cube solving algorithm
+3. The ability to write the current state of the cube to a text file enables testing and debugging of the Rubik's cube solving algorithm
 4. User-friendly and much easy user interface
 5. Supports multiple platforms, windows and android both
 
@@ -28,8 +28,8 @@ R - Right Face
 U - Up Face
 D - Down Face
 
-M - Centre Right Vertical
-S - Centre Left Vertical
+M - Centre-Right Vertical
+S - Centre-Left Vertical
 E - Centre Horizontal
 
 X - Rotates Cube on R
