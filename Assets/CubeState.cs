@@ -207,22 +207,22 @@ public class CubeState : MonoBehaviour
 
     public void WriteOriginalStateString()
     {
-        string stateString="Current State\n\n";
+        string stateString = "";
         stateString += "Up Face\n";
         stateString += GetOriginalSideString(up);
-        stateString += "\n\n";
+        stateString += "\n";
         stateString += "Right Face\n";
         stateString += GetOriginalSideString(right);
-        stateString += "\n\n";
+        stateString += "\n";
         stateString += "Front Face\n";
         stateString += GetOriginalSideString(front);
-        stateString += "\n\n";
+        stateString += "\n";
         stateString += "Down Face\n";
         stateString += GetOriginalSideString(down);
-        stateString += "\n\n";
+        stateString += "\n";
         stateString += "Left Face\n";
         stateString += GetOriginalSideString(left);
-        stateString += "\n\n";
+        stateString += "\n";
         stateString += "Back Face\n";
         stateString += GetOriginalSideString(back);
 
