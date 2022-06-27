@@ -1,0 +1,12 @@
+Up Face
+BLRRUBLUR
+Right Face
+DRDDBRBRL
+Front Face
+DFFURBRLU
+Down Face
+FFRUDFDFF
+Left Face
+UUBLFLFBU
+Back Face
+BBLDLDUDL
