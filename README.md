@@ -8,7 +8,7 @@ The simulator is equipped with a cube solving algorithm named The Two-Phase Algo
 The Fetch state button is exclusively meant for testing and debugging purposes and is only available for desktop users. The fetch state button saves the cube's current state into a text file named [CurrentState.txt](https://github.com/milind-prajapat/Rubiks-Cube/blob/main/Builds/Windows_x64/Rubiks%20Cube_Data/CurrentState.txt), which is available in the simulator's [data](https://github.com/milind-prajapat/Rubiks-Cube/tree/main/Builds/Windows_x64/Rubiks%20Cube_Data) directory.
 
 ## Instructions To Use
-One can find the required files to run the simulator in the [Builds](https://github.com/milind-prajapat/Rubiks-Cube/tree/main/Builds) directory of the repository. Android users can use the apk file to install the application, whereas windows users can go with the [Windows_x64](https://github.com/milind-prajapat/Rubiks-Cube/tree/main/Builds/Windows_x64) or [Windows_x86](https://github.com/milind-prajapat/Rubiks-Cube/tree/main/Builds/Windows_x86) directory, depending on their architecture.
+One can find the required files to run the simulator in the [Builds](https://github.com/milind-prajapat/Rubiks-Cube/tree/main/Builds) directory of the repository. Android users can use the [apk file](https://github.com/milind-prajapat/Rubiks-Cube/blob/main/Builds/Rubiks%20Cube.apk) to install the application, whereas windows users can go with the [Windows_x64](https://github.com/milind-prajapat/Rubiks-Cube/tree/main/Builds/Windows_x64) or [Windows_x86](https://github.com/milind-prajapat/Rubiks-Cube/tree/main/Builds/Windows_x86) directory, depending on their architecture.
 
 You can use the pointing devices as well as the keyboard keys to use the simulator.
 
