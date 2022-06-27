@@ -12,5 +12,5 @@ You can then either run the code directly on the visual studio using [Rubicks Cu
 * The code controls the Keyboard keys, further influencing the simulator through which every step is visualized.
 * The Algorithm uses the beginner's method.
 
-##References
+## References
 * [Video Demonstration](https://drive.google.com/file/d/1a9_3-TUbTZP33zhqn4eg5Top8MavMkZR/view)
