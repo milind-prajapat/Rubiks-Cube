@@ -44,5 +44,5 @@ Uppercase turns 90° clockwise, and Lowercase turns 90° counter-clockwise
 ```
 
 ## References
-1. [Windows Build](https://drive.google.com/file/d/1yPU8f04ILZ6PNuArOsjJkt3EMk4QQR_F/view?usp=sharing)
-2. [Android Application](https://drive.google.com/file/d/1ExQ5nqQ2iixKeT88FqmeG6X6uyF3YHdG/view?usp=sharing)
+1. [Windows Build](https://drive.google.com/file/d/1xQnlbKi5M_Rtx6KdWRXmCY5_jT-Yv-Bi/view?usp=drive_link)
+2. [Android Application](https://drive.google.com/file/d/1slh49MVY4245Jy32-4mnvxicc-B9EZqH/view?usp=drive_link)
