@@ -13,4 +13,4 @@ You can then either run the code directly on the visual studio using [Rubicks Cu
 3. The Algorithm used is based on beginner's method
 
 ## References
-* [Video Demonstration](https://drive.google.com/file/d/1a9_3-TUbTZP33zhqn4eg5Top8MavMkZR/view)
+* [Video Demonstration](https://drive.google.com/file/d/1i53gnasQbXC0QFCpzEi3sunPtmQkKXXV/view?usp=drive_link)
